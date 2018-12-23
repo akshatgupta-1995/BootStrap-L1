@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<p>Click the button to encode a URI.</p>
+<p><input type="text" name="str" id="str" placeholder="Enter URL"></p>
+<button onclick="encode()">Submit</button>
+<p id="demo"></p>
+<script>
+function encode() {
+  var uri = document.getElementById("str").value;
+  var result = encodeURIComponent(uri);
+  document.getElementById("demo").innerHTML = result;
+}
+</script>
+</body>
+</html>
